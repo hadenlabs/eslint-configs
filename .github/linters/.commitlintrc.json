@@ -1,0 +1,3 @@
+{
+  "extends": ["@hadenlabs/commitlint-config", "@commitlint/config-lerna-scopes"]
+}

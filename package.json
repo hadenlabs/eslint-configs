@@ -1,0 +1,103 @@
+{
+  "name": "@hadenlabs/eslint-config",
+  "description": "eslint-config",
+  "version": "0.0.0",
+  "author": {
+    "email": "slovacus@gmail.com",
+    "name": "Luis Mayta",
+    "url": "https://github.com/luismayta"
+  },
+  "license": "LGPL-3.0",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc -p",
+    "build:tool": "yarn run build ./tools/",
+    "clean": "rimraf -rf dist",
+    "clean:all": "yarn clean:cache && yarn clean:build:all && yarn clean node_modules",
+    "clean:build": "yarn clean dist .next out .serverless_nextjs",
+    "clean:build:all": "yarn clean && yarn clean:build && yarn clean:build:tool && yarn clean:build:test",
+    "clean:build:test": "yarn clean ./coverage",
+    "clean:build:tool": "yarn clean ./build/tools",
+    "clean:cache": "yarn clean ./node_modules/.cache",
+    "lint": "eslint --config=.github/linters/.eslintrc.js --ignore-path=.github/linters/.eslintignore ./ --ext .js,.jsx,.mjs,.d.ts,.ts,.tsx",
+    "lint:fix": "yarn lint --fix",
+    "lint:less": "stylelint --config=.github/linters/.stylintrc --syntax less **/*.less",
+    "lint:less:fix": "yarn lint:less --fix",
+    "prebuild": "yarn run clean",
+    "precommit": "lint-staged",
+    "eslint-find-rules-deprecated-base": "eslint-find-rules --deprecated --no-error packages/eslint-config-base/index.js",
+    "eslint-find-rules-deprecated-node": "eslint-find-rules --deprecated --no-error packages/eslint-config-node/index.js",
+    "eslint-find-rules-deprecated-react": "eslint-find-rules --deprecated --no-error packages/eslint-config-react/index.js",
+    "eslint-find-rules-unused-base": "eslint-find-rules --unused --no-error packages/eslint-config-base/index.js",
+    "eslint-find-rules-unused-node": "eslint-find-rules --unused --no-error packages/eslint-config-node/index.js",
+    "eslint-find-rules-unused-react": "eslint-find-rules --unused --no-error packages/eslint-config-react/index.js",
+    "ncu": "ncu -u --target minor",
+    "patch": "./provision/scripts/publish.patch.sh",
+    "syncpack-format": "syncpack format",
+    "prettier": "prettier --config=.github/linters/prettier.config.js --ignore-path=.github/linters/.prettierignore",
+    "prettier:fix": "yarn prettier:lint --write=true",
+    "prettier:lint": "yarn prettier '**/*.{js?(on),ts?(x),scss,md,y?(a)ml,gql,graphql?(s),less,mjml}' --write=false --list-different"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@commitlint/config-lerna-scopes": "^12.1.1",
+    "@prettier/plugin-xml": "^0.13.1",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "eslint-find-rules": "^3.6.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.5",
+    "eslint-plugin-jest-dom": "^3.8.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
+    "eslint-plugin-testing-library": "^4.1.0",
+    "eslint-plugin-typescript-sort-keys": "^1.6.0",
+    "eslint-plugin-unicorn": "^30.0.0",
+    "husky": "^6.0.0",
+    "lerna": "^4.0.0",
+    "npm-check-updates": "^11.5.0",
+    "npm-cli-login": "^0.1.1",
+    "prettier": "^2.2.1",
+    "syncpack": "^5.7.11",
+    "typescript": "^4.2.4"
+  },
+  "bugs": {
+    "url": "https://github.com/hadenlabs/eslint-config/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn precommit",
+      "commit-msg": "commitlint --config=.github/linters/.commitlintrc.json -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "keywords": [
+    "@hadenlabs/eslint-config-base",
+    "@hadenlabs/eslint-config-node",
+    "@hadenlabs/eslint-config-react",
+    "hadenlabs",
+    "template",
+    "tool"
+  ],
+  "homepage": "https://github.com/hadenlabs/eslint-config#readme",
+  "private": true,
+  "publishConfig": {
+    "access": "private",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadenlabs/eslint-config.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
