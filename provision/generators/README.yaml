@@ -1,0 +1,49 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: eslint-config
+
+email:
+  support: support@hadenlabs.com
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: 'LGPL-3.0'
+
+# Canonical GitHub repo
+github_repo: hadenlabs/eslint-config
+
+# Badges to display
+badges:
+  - name: GitHub tag (latest SemVer)
+    image: https://img.shields.io/github/v/tag/hadenlabs/eslint-config.svg?label=latest&sort=semver
+    url: https://github.com/hadenlabs/eslint-config/releases
+  - name: Lint
+    image: https://github.com/hadenlabs/eslint-config/actions/workflows/lint.yml/badge.svg?branch=develop
+    url: https://github.com/hadenlabs/eslint-config/actions
+  - name: Issues
+    image: https://img.shields.io/github/issues/hadenlabs/eslint-config.svg
+    url: https://github.com/hadenlabs/eslint-config/issues
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/eslint-config.svg
+    url: https://github.com/hadenlabs/eslint-config/releases
+
+# Short description of this project
+description: |-
+
+  eslint-config configuration
+
+installation:
+  - 'docs/include/installation/yarn.md'
+  - 'docs/include/installation/npm.md'
+
+usage: |-
+
+examples:
+  - 'docs/examples/common.md'
