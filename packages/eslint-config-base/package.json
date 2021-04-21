@@ -1,0 +1,67 @@
+{
+  "name": "@hadenlabs/eslint-config-base",
+  "version": "0.0.0",
+  "author": {
+    "email": "support@hadenlabs.com",
+    "name": "luis mayta",
+    "url": "https://github.com/hadenlabs"
+  },
+  "description": "Eslint config that serves as the basis for other config files.",
+  "main": "index.js",
+  "license": "LGPL-3.0",
+  "scripts": {
+    "ncu-peer": "ncu --dep peer -u --target minor",
+    "precommit": "lint-staged",
+    "prettier": "prettier --config=.github/linters/prettier.config.js --ignore-path=.github/linters/.prettierignore",
+    "prettier:fix": "yarn prettier:lint --write=true",
+    "prettier:lint": "yarn prettier '**/*.{js?(on),ts?(x),scss,md,y?(a)ml,gql,graphql?(s),less,mjml}' --write=false --list-different"
+  },
+  "devDependencies": {
+    "lint-staged": "^10.5.4"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.5",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
+    "eslint-plugin-typescript-sort-keys": "^1.6.0",
+    "eslint-plugin-unicorn": "^30.0.0",
+    "prettier": "^2.2.1"
+  },
+  "bugs": "https://github.com/hadenlabs/eslint-configs/issues",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "@hadenlabs/eslint-config-base",
+    "@typescript-eslint/eslint-plugin",
+    "@typescript-eslint/parser",
+    "eslint",
+    "eslint-plugin-import",
+    "eslint-plugin-jest",
+    "eslint-plugin-prettier",
+    "eslint-plugin-promise",
+    "eslint-plugin-simple-import-sort",
+    "eslint-plugin-sort-keys-fix",
+    "eslint-plugin-typescript-sort-keys",
+    "eslint-plugin-unicorn",
+    "prettier"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadenlabs/eslint-configs.git"
+  }
+}
