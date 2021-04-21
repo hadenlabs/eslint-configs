@@ -1,4 +1,4 @@
-origin: github.com/hadenlabs/eslint-config
+origin: github.com/hadenlabs/eslint-configs
 issue_tracker: GITHUB
 auth:
   type: none
