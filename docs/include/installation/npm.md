@@ -3,5 +3,5 @@
 If you're using [npm](https://www.npmjs.com)
 
 ```shell
-  npm i --save-dev @hadenlabs/eslint-config
+  npm i --save-dev @hadenlabs/eslint-configs
 ```

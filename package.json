@@ -1,6 +1,6 @@
 {
-  "name": "@hadenlabs/eslint-config",
-  "description": "eslint-config",
+  "name": "@hadenlabs/eslint-configs",
+  "description": "eslint-configs",
   "version": "0.0.0",
   "author": {
     "email": "slovacus@gmail.com",
@@ -68,7 +68,7 @@
     "typescript": "^4.2.4"
   },
   "bugs": {
-    "url": "https://github.com/hadenlabs/eslint-config/issues"
+    "url": "https://github.com/hadenlabs/eslint-configs/issues"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -87,7 +87,7 @@
     "template",
     "tool"
   ],
-  "homepage": "https://github.com/hadenlabs/eslint-config#readme",
+  "homepage": "https://github.com/hadenlabs/eslint-configs#readme",
   "private": true,
   "publishConfig": {
     "access": "private",
@@ -95,7 +95,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hadenlabs/eslint-config.git"
+    "url": "git+https://github.com/hadenlabs/eslint-configs.git"
   },
   "workspaces": [
     "packages/*"

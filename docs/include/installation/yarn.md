@@ -3,5 +3,5 @@
 If you're using [yarn](https://yarnpkg.com)
 
 ```shell
-  yarn add --dev @hadenlabs/eslint-config
+  yarn add --dev @hadenlabs/eslint-configs
 ```

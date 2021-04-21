@@ -1,4 +1,4 @@
-site_name: eslint-config Documentation
+site_name: eslint-configs Documentation
 theme: 'material'
 markdown_extensions:
   - toc:
@@ -15,8 +15,8 @@ extra:
   font:
     text: 'Source Sans Pro'
 
-repo_name: 'hadenlabs/eslint-config'
-repo_url: 'https://github.com/hadenlabs/eslint-config'
+repo_name: 'hadenlabs/eslint-configs'
+repo_url: 'https://github.com/hadenlabs/eslint-configs'
 copyright: 'Copyright © 2021 <a href="https://hadenlabs.com">hadenlabs</a>'
 
 google_analytics:

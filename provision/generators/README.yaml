@@ -5,7 +5,7 @@
 #
 
 # Name of this project
-name: eslint-config
+name: eslint-configs
 
 email:
   support: support@hadenlabs.com
@@ -17,27 +17,27 @@ email:
 license: 'LGPL-3.0'
 
 # Canonical GitHub repo
-github_repo: hadenlabs/eslint-config
+github_repo: hadenlabs/eslint-configs
 
 # Badges to display
 badges:
   - name: GitHub tag (latest SemVer)
-    image: https://img.shields.io/github/v/tag/hadenlabs/eslint-config.svg?label=latest&sort=semver
-    url: https://github.com/hadenlabs/eslint-config/releases
+    image: https://img.shields.io/github/v/tag/hadenlabs/eslint-configs.svg?label=latest&sort=semver
+    url: https://github.com/hadenlabs/eslint-configs/releases
   - name: Lint
-    image: https://github.com/hadenlabs/eslint-config/actions/workflows/lint.yml/badge.svg?branch=develop
-    url: https://github.com/hadenlabs/eslint-config/actions
+    image: https://github.com/hadenlabs/eslint-configs/actions/workflows/lint.yml/badge.svg?branch=develop
+    url: https://github.com/hadenlabs/eslint-configs/actions
   - name: Issues
-    image: https://img.shields.io/github/issues/hadenlabs/eslint-config.svg
-    url: https://github.com/hadenlabs/eslint-config/issues
+    image: https://img.shields.io/github/issues/hadenlabs/eslint-configs.svg
+    url: https://github.com/hadenlabs/eslint-configs/issues
   - name: Latest Release
-    image: https://img.shields.io/github/release/hadenlabs/eslint-config.svg
-    url: https://github.com/hadenlabs/eslint-config/releases
+    image: https://img.shields.io/github/release/hadenlabs/eslint-configs.svg
+    url: https://github.com/hadenlabs/eslint-configs/releases
 
 # Short description of this project
 description: |-
 
-  eslint-config configuration
+  eslint-configs configuration
 
 installation:
   - 'docs/include/installation/yarn.md'

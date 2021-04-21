@@ -1,1 +1,1 @@
-# Welcome to eslint-config documentation
+# Welcome to eslint-configs documentation
