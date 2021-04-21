@@ -3,7 +3,7 @@ module.exports = {
   printWidth: 100,
   proseWrap: 'preserve',
   semi: false,
-  trailingComma: 'es5',
+  trailingComma: 'none',
   arrowParens: 'always',
   singleQuote: true,
   overrides: [
@@ -11,7 +11,7 @@ module.exports = {
       files: '{*.js?(on),*.y?(a)ml,.*.js?(on),.*.y?(a)ml,*.md,.prettierrc,.stylelintrc,.babelrc}',
       options: {
         arrowParens: 'always',
-        printWidth: 120,
+        printWidth: 100,
         semi: false,
         singleQuote: true,
         quoteProps: 'as-needed',
