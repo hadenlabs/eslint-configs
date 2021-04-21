@@ -12,11 +12,11 @@
 
   -->
 
-# eslint-config
+# eslint-configs
 
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/eslint-config.svg?label=latest&sort=semver)](https://github.com/hadenlabs/eslint-config/releases) [![Lint](https://github.com/hadenlabs/eslint-config/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/eslint-config/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/eslint-config.svg)](https://github.com/hadenlabs/eslint-config/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/eslint-config.svg)](https://github.com/hadenlabs/eslint-config/releases)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/eslint-configs.svg?label=latest&sort=semver)](https://github.com/hadenlabs/eslint-configs/releases) [![Lint](https://github.com/hadenlabs/eslint-configs/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/eslint-configs/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/eslint-configs.svg)](https://github.com/hadenlabs/eslint-configs/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/eslint-configs.svg)](https://github.com/hadenlabs/eslint-configs/releases)
 
-eslint-config configuration
+eslint-configs configuration
 
 ## Installation
 
@@ -25,7 +25,7 @@ eslint-config configuration
 If you're using [yarn](https://yarnpkg.com)
 
 ```shell
-  yarn add --dev @hadenlabs/eslint-config
+  yarn add --dev @hadenlabs/eslint-configs
 ```
 
 ### [npm](https://www.npmjs.com)
@@ -33,7 +33,7 @@ If you're using [yarn](https://yarnpkg.com)
 If you're using [npm](https://www.npmjs.com)
 
 ```shell
-  npm i --save-dev @hadenlabs/eslint-config
+  npm i --save-dev @hadenlabs/eslint-configs
 ```
 
 ## Usage
@@ -46,13 +46,13 @@ If you're using [npm](https://www.npmjs.com)
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/hadenlabs/eslint-config/issues).
+File a GitHub [issue](https://github.com/hadenlabs/eslint-configs/issues).
 
 ## Contributing
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/hadenlabs/eslint-config/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/hadenlabs/eslint-configs/issues) to report any bugs or file feature requests.
 
 ### Development
 
@@ -93,6 +93,6 @@ All other trademarks referenced herein are the property of their respective owne
 
 The code and styles are licensed under the LGPL-3.0 license [See project license.](LICENSE).
 
-## Don't forget to 🌟 Star 🌟 the repo if you like eslint-config
+## Don't forget to 🌟 Star 🌟 the repo if you like eslint-configs
 
-[Your feedback is appreciated](https://github.com/hadenlabs/eslint-config/issues)
+[Your feedback is appreciated](https://github.com/hadenlabs/eslint-configs/issues)
